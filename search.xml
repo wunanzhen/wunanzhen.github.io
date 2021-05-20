@@ -67,32 +67,15 @@
 <p>   所有的客户端中都会有直连，全局，和PAC三个选项<br>   直连表示直接连接不翻墙<br>   全局表示所有网站都通过梯子访问<br>   PAC为内置规则国内网站不用梯子，国外用<br>   由于机场的梯子很多有流量限制建议用PAC或者小猫咪的规则模式<br>   并且ＧＦＷ并不只是让我们访问不了某些外国网站，也会让国外无法访问国内的网站如QQ，爱奇艺，当你打开全局你也无法访问这些网站，不过如果你使用台湾，香港 节点打开全局则可以看B站的港澳台限定番剧，</p>
 <p>   订阅链接<br>   大多数网友分享的节点都是零散的，而机场则一般会给你订阅链接，更加方便，各个客户端订阅链接导入点如下<br>   ｓｓ客户端不支持导入订阅<br>   ｓｓｒ任务栏图标鼠标右键<br><img src="/images/35.png" alt="Lena"><br>         ｖ２ｒａｙ<br><img src="/images/36.png" alt="Lena"><br>         下载地址<br>         Ss   v2ray: <a href="https://github.com/hugetiny/awesome-vpn">https://github.com/hugetiny/awesome-vpn</a><br>         Ssr(下载第一个):   <a href="https://github.com/shadowsocksrr/shadowsocksr-csharp/releases">https://github.com/shadowsocksrr/shadowsocksr-csharp/releases</a><br>         Clash;   <a href="https://github.com/Fndroid/clash_for_windows_pkg/releases">https://github.com/Fndroid/clash_for_windows_pkg/releases</a><br>         Clash汉化包：<a href="https://github.com/BoyceLig/Clash_Chinese_Patch/releases">https://github.com/BoyceLig/Clash_Chinese_Patch/releases</a></p>
 <h2 id="翻墙客户端的使用-Android"><a href="#翻墙客户端的使用-Android" class="headerlink" title="翻墙客户端的使用(Android)"></a>翻墙客户端的使用(Android)</h2><ol>
-<li><p>ss/ssr<br>下载:ss/ssr的项目都在github上开源，我会把地址放到最后。github不需要翻墙<br><img src="/images/37.jpg" alt="Lena"></p>
-<pre><code>打开我分享的网址这里可以下载除了clash（后面解释）的所有翻墙客户端
-找到安卓一栏下的shadowsocks点击，就会开始下载，虽然没被墙，github下载可能会慢一点点。
-下载完成后点击然后就可以安装了，苹果手机只有小飞机一款软件，由于本人没有苹果手机并不知道这里iOS端的小飞机是否可以正常安装，目前苹果手机主流安装方法需要美区的ID号登录apple stroe下载小飞机客户端。本教程只针对安卓设备。
-下载安装后是这样的页面，里面内置了一个失效的节点，按住节点想左滑动就可以删除节点。
-</code></pre>
-<p><img src="/images/38.jpg" alt="Lena"></p>
-<pre><code>在我分享的下载页下面也分享了免费的节点，我以此为例演示如何导入节点。这里的节点并不能使用都过期了，后面会有一个文档分享找节点的方法。
-</code></pre>
-<p><img src="/images/39.jpg" alt="Lena"></p>
-<pre><code>找到ssr节点，将下面的链接全部复制，打开ssr客户端点击下面的加号    
-</code></pre>
-<p><img src="/images/40.jpg" alt="Lena"><br><img src="/images/41.jpg" alt="Lena"></p>
-<pre><code>再点击从剪切板导入
-</code></pre>
-<p><img src="/images/42.jpg" alt="Lena"></p>
-<pre><code>点击确定
-节点就导入成功了
-</code></pre>
-<p><img src="/images/43.jpg" alt="Lena"><br>   点击后面的小闪电图标可以测试节点的延迟由于该页面的节点都过期了，不能翻墙。<br>   测试一个延迟小的节点点击会进入节点的详细页面。<br><img src="/images/44.jpg" alt="Lena"><br>   点击右上脚的圆圈小飞机上的斜杠消失就成功连接节点了。第一次连接会提示ssr请求连接一个VPN点击同意即可。连接成功后手机提示栏会出现一个VPN图标表示连接了VPN<br><img src="/images/45.jpg" alt="Lena"><br>   这样就成功翻墙了，打开浏览器尝试是否可以访问谷歌搜索或者YouTube<br>   点击左上角shadowsocksr图标即可回到节点列表。<br>   如果你有订阅链接在点击加号后点击第一个添加链接，然后把你的链接粘贴即可，有些链接需要科学上网环境下才能更新。如果你使用机场建议打开自动更新。</p>
-<p>   在节点的详细页面可以选择代理的类型，全局或者PAC,具体意思参考电脑端<br><img src="/images/46.jpg" alt="Lena"></p>
-<p>   V2Ray<br>   同样点击我下载页面中安卓下的v2Ray栏就可以下载<br>   下载安装后是这样的<br><img src="/images/47.jpg" alt="Lena"><br>   我已经导入节点了。导入节点，点击左上角的加号和ssr方法一样。<br><img src="/images/48.jpg" alt="Lena"><br>   点击左上角的三个杠在这这里可以具体设置和导入订阅链接。<br><img src="/images/49.jpg" alt="Lena"></p>
-<pre><code>选好合适的节点后点击右下角的圆圈，里面有字，V圆圈变绿，连接成功。
-</code></pre>
-</li>
+<li>ss/ssr<br>下载:ss/ssr的项目都在github上开源，我会把地址放到最后。github不需要翻墙<br><img src="/images/37.jpg" alt="Lena"><br>打开我分享的网址这里可以下载除了clash（后面解释）的所有翻墙客户端<br>找到安卓一栏下的shadowsocks点击，就会开始下载，虽然没被墙，github下载可能会慢一点点。<br>下载完成后点击然后就可以安装了，苹果手机只有小飞机一款软件，由于本人没有苹果手机并不知道这里iOS端的小飞机是否可以正常安装，目前苹果手机主流安装方法需要美区的ID号登录apple stroe下载小飞机客户端。本教程只针对安卓设备。<br>下载安装后是这样的页面，里面内置了一个失效的节点，按住节点想左滑动就可以删除节点。<br><img src="/images/38.jpg" alt="Lena"><br>在我分享的下载页下面也分享了免费的节点，我以此为例演示如何导入节点。这里的节点并不能使用都过期了，后面会有一个文档分享找节点的方法。<br><img src="/images/39.jpg" alt="Lena"><br>找到ssr节点，将下面的链接全部复制，打开ssr客户端点击下面的加号<br><img src="/images/40.jpg" alt="Lena"><br><img src="/images/41.jpg" alt="Lena"><br>再点击从剪切板导入<br><img src="/images/42.jpg" alt="Lena"><br>点击确定<br>节点就导入成功了<br><img src="/images/43.jpg" alt="Lena"><br>点击后面的小闪电图标可以测试节点的延迟由于该页面的节点都过期了，不能翻墙。<br>测试一个延迟小的节点点击会进入节点的详细页面。<br><img src="/images/44.jpg" alt="Lena"><br>点击右上脚的圆圈小飞机上的斜杠消失就成功连接节点了。第一次连接会提示ssr请求连接一个VPN点击同意即可。连接成功后手机提示栏会出现一个VPN图标表示连接了VPN<br><img src="/images/45.jpg" alt="Lena"><br>这样就成功翻墙了，打开浏览器尝试是否可以访问谷歌搜索或者YouTube<br>点击左上角shadowsocksr图标即可回到节点列表。<br>如果你有订阅链接在点击加号后点击第一个添加链接，然后把你的链接粘贴即可，有些链接需要科学上网环境下才能更新。如果你使用机场建议打开自动更新。</li>
 </ol>
+<pre><code>在节点的详细页面可以选择代理的类型，全局或者PAC,具体意思参考电脑端
+</code></pre>
+<p><img src="/images/46.jpg" alt="Lena"></p>
+<pre><code>2.V2Ray
+</code></pre>
+<p>  同样点击我下载页面中安卓下的v2Ray栏就可以下载<br>  下载安装后是这样的<br><img src="/images/47.jpg" alt="Lena"><br>    我已经导入节点了。导入节点，点击左上角的加号和ssr方法一样。<br><img src="/images/48.jpg" alt="Lena"><br>    点击左上角的三个杠在这这里可以具体设置和导入订阅链接。<br><img src="/images/49.jpg" alt="Lena"></p>
+<p>选好合适的节点后点击右下角的圆圈，里面有字，V圆圈变绿，连接成功。</p>
 <p>客户端全平台客户端下载地址：     <a href="https://github.com/hugetiny/awesome-vpn">https://github.com/hugetiny/awesome-vpn</a><br>          没有clash</p>
 <p>   clash<br>   clash使用<br>   clash是一个网关管理软件，可以可智能配置选择节点，针对不同网站使用不同的节点达到最好的体验和省翻墙流量的目的，是目前最好用的翻墙客户端，只要导入配置后连接就可以了，方便极了。<br>clash下载地址:<a href="https://github.com/Kr328/ClashForAndroid/releases/tag/v2.3.2">https://github.com/Kr328/ClashForAndroid/releases/tag/v2.3.2</a><br><img src="/images/50.jpg" alt="Lena"></p>
 <p>   点击Assets列表展开下载第一个安装即可<br>   客户端页面<br><img src="/images/51.jpg" alt="Lena"><br>         点击配置<br><img src="/images/52.jpg" alt="Lena"><br>         点击右上角加号从URL导入将机场给你的clash配置链接粘贴到URL栏即可。名称可以自定义。<br><img src="/images/53.jpg" alt="Lena"><br>         导入后回到首页<br>         点第一栏启动clash会连接一个VPN界面变成这样<br><img src="/images/54.jpg" alt="Lena"><br>         如果自动选择节点不给力点击代理选择即可<br>         右上角三个点模式可切换规则全局<br><img src="/images/55.jpg" alt="Lena"><br>         常用的手机端翻墙客户端就讲完了</p>
