@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"wunanzhen.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":5,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="由于本人并没有iOS设备，但是帮助同学为其iOS设备安装过iOS的科学上网工具，所以关于iOS的教程无法实际演示，仅能以文字说明，我会尽可能表述清楚，也会贴上一些别人写的可访问的教程。Mac我将使用虚拟机进行演示，使用的版本较旧，但操作方法相似。如果您购买了M1版本的mac恕我无能为力，但M1版本的mac可安装iOS端的的app您可以想办法安装。翻墙的一些原理还有免费的节点白嫖我在Windows&#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ios&#x2F;Mac科学上网">
+<meta property="og:url" content="http://wunanzhen.github.io/2021/06/06/post-my-3-blog/index.html">
+<meta property="og:site_name" content="难臻？北战">
+<meta property="og:description" content="由于本人并没有iOS设备，但是帮助同学为其iOS设备安装过iOS的科学上网工具，所以关于iOS的教程无法实际演示，仅能以文字说明，我会尽可能表述清楚，也会贴上一些别人写的可访问的教程。Mac我将使用虚拟机进行演示，使用的版本较旧，但操作方法相似。如果您购买了M1版本的mac恕我无能为力，但M1版本的mac可安装iOS端的的app您可以想办法安装。翻墙的一些原理还有免费的节点白嫖我在Windows&#x2F;">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://wunanzhen.github.io/2021/06/06/post-my-3-blog/1.png">
+<meta property="og:image" content="http://wunanzhen.github.io/2021/06/06/post-my-3-blog/2.png">
+<meta property="og:image" content="http://wunanzhen.github.io/2021/06/06/post-my-3-blog/3.png">
+<meta property="og:image" content="http://wunanzhen.github.io/2021/06/06/post-my-3-blog/4.png">
+<meta property="og:image" content="http://wunanzhen.github.io/2021/06/06/post-my-3-blog/5.png">
+<meta property="og:image" content="http://wunanzhen.github.io/2021/06/06/post-my-3-blog/6.png">
+<meta property="og:image" content="http://wunanzhen.github.io/2021/06/06/post-my-3-blog/7.png">
+<meta property="og:image" content="http://wunanzhen.github.io/2021/06/06/post-my-3-blog/8.png">
+<meta property="article:published_time" content="2021-06-05T17:41:50.000Z">
+<meta property="article:modified_time" content="2021-06-05T18:04:22.878Z">
+<meta property="article:author" content="Wu nanzhen">
+<meta property="article:tag" content="科学上网">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://wunanzhen.github.io/2021/06/06/post-my-3-blog/1.png">
+
+<link rel="canonical" href="http://wunanzhen.github.io/2021/06/06/post-my-3-blog/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>ios/Mac科学上网 | 难臻？北战</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">难臻？北战</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这是我的blog</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://wunanzhen.github.io/2021/06/06/post-my-3-blog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+      <meta itemprop="name" content="Wu nanzhen">
+      <meta itemprop="description" content="永远相信美好的事情即将发生">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="难臻？北战">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          ios/Mac科学上网
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-06 01:41:50 / 修改时间：02:04:22" itemprop="dateCreated datePublished" datetime="2021-06-06T01:41:50+08:00">2021-06-06</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B8%8A%E7%BD%91-%E7%BF%BB%E5%A2%99/" itemprop="url" rel="index"><span itemprop="name">上网 翻墙</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>由于本人并没有iOS设备，但是帮助同学为其iOS设备安装过iOS的科学上网工具，所以关于iOS的教程无法实际演示，仅能以文字说明，我会尽可能表述清楚，也会贴上一些别人写的可访问的教程。Mac我将使用虚拟机进行演示，使用的版本较旧，但操作方法相似。如果您购买了M1版本的mac恕我无能为力，但M1版本的mac可安装iOS端的的app您可以想办法安装。翻墙的一些原理还有免费的节点白嫖我在Windows/android科学上网教程中有说明就不再赘述了。</p>
+<span id="more"></span>
+
+<h2 id="iOS"><a href="#iOS" class="headerlink" title="iOS"></a>iOS</h2><p>iOS端的科学上网工具也有不少，但是大家一般使用的就是Shadowrocket，其兼容各种翻墙协议，界面简洁备受好评。早期版本完全免费，后期需要3美元购买，当然后期的版本更加人性化，比如可以粘贴梯子链接导入梯子，添加订阅链接等等。当然其实在其他系统上这都是必备功能，不过iOS这么高端的系统不收费就给你当然不足以显示其地位。</p>
+<h3 id="第一种方法"><a href="#第一种方法" class="headerlink" title="第一种方法"></a>第一种方法</h3><p>具体步骤<br>第一步    美区apple ID获取<br>翻墙的客户端在中国大陆地区的apple store是不能上架的，你需要美区或者香港的apple ID才可以在商店中下载。</p>
+<p>第二步   shadow rocket下载<br>这个在系统和apple store等登录了美区ID然后商店搜索下载即可（如果你购买了别人的ID,或者使用了网络上分享的请勿登录iCloud，有可能导致手机被锁变砖），旧版免费，新版需要3美元购买（不知道涨价了没有）</p>
+<p>第三步   使用<br>导入节点使用即可，具体功能设置参考Windows/Android。注意旧版需要手动输入节点的账号密码，端口等信息，你可以在电脑上的科学上网工具中查看这些信息。</p>
+<p>美区ID可以自己注册也可以网上找，淘宝卖服务，淘宝店的服务一般会提供给你一个已经购买了该软件的ID供你直接下载，具体可以和店家详谈。</p>
+<p>我在这里给大家提供一些别的教程获取美区ID<br>美区ID注册：<a target="_blank" rel="noopener" href="https://appledi.com/appleid/">https://appledi.com/appleid/</a><br>免费美区ID分享（ID可能失效）：<a target="_blank" rel="noopener" href="https://appledi.com/">https://appledi.com/</a><br>安装教程：<a target="_blank" rel="noopener" href="https://appledi.com/Shadowrocket/">https://appledi.com/Shadowrocket/</a></p>
+<h3 id="第二种方法"><a href="#第二种方法" class="headerlink" title="第二种方法"></a>第二种方法</h3><p>下面简绍另一种教程下载iOS端shadow rocket的安装包api文件到电脑，用爱思助手安装。</p>
+<p>安装包可以自己百度或者到GitHub搜索下载（GitHub应该还会有使用方法）。<br>这是我找到的安装包<a target="_blank" rel="noopener" href="https://github.com/v2net/ios/releases/">https://github.com/v2net/ios/releases/</a><br>下载第一个文件即可<br>爱思助手安装软件的方法：<a target="_blank" rel="noopener" href="https://www.i4.cn/news_detail_3339.html">https://www.i4.cn/news_detail_3339.html</a><br>在线安装网站（自行尝试能否使用）：<a target="_blank" rel="noopener" href="https://1.v2w.org/ios/">https://1.v2w.org/ios/</a></p>
+<p>一个提供安装服务的网站注册账号后即可使用提供在线安装服务，但是已经被墙，目前不清楚是否还提供服务以及是否依然免费我会在文末附上一款傻瓜型免费的VPN可以翻墙尝试，由于我没有iOS设备也没有尝试这个网站是否还会提供服务，但是翻墙后可以访问是肯定的   网址：<a target="_blank" rel="noopener" href="https://sstz.me/login">https://sstz.me/login</a></p>
+<h2 id="Mac端"><a href="#Mac端" class="headerlink" title="Mac端"></a>Mac端</h2><p>Mac端我常用的是v2ray U和clash x(建议使用这两款ss/ssr协议已经很容易被墙了，尤其现在机场一般会提供clash配置文件给你很方便。)<br>V2ray U:” <a target="_blank" rel="noopener" href="https://github.com/yanue/V2rayU/releases/tag/3.0.3">https://github.com/yanue/V2rayU/releases/tag/3.0.3</a><br>Clash x: <a target="_blank" rel="noopener" href="https://github.com/yichengchen/clashX/releases/tag/1.50.1">https://github.com/yichengchen/clashX/releases/tag/1.50.1</a><br>下载第一个.dmg文件即可下载后双击打开安装<br>将软件图标拖动到蓝色文件夹中就安装成功了，用过mac的朋友应该都会。<br><img src="1.png" alt="alt"><br><img src="2.png" alt="alt"><br>在访达中打开软件上面会出现图标小猫咪是clash，另一个是v2ray.<br><img src="3.png" alt="alt"></p>
+<p>点击图标出现相应的菜单</p>
+<h3 id="V2ray-U"><a href="#V2ray-U" class="headerlink" title="V2ray U"></a>V2ray U</h3><p><img src="4.png" alt="alt"><br>从粘贴版导入：复制你找到的节点点击即可导入节点<br>订阅设置：点击可设置你从机场获得的订阅地址以及更新订阅<br>第二行的Turn v2ray-core on：点击后变为off表示开启VPN翻墙服务<br>全局，pac 流量分配模式详见之前的Windows教程</p>
+<h3 id="Clash-x"><a href="#Clash-x" class="headerlink" title="Clash x"></a>Clash x</h3><p><img src="5.png" alt="alt"><br>配置：选择配置文件，以及添加更新配置<br>      选择只要点击对应配置文件名字，添加点击托管配置——管理<br><img src="6.png" alt="alt"><br>控制台：唤出主界面<br><img src="7.png" alt="alt"><br>设为系统代理：开启翻墙<br>允许来自区域网的连接：为同一局域网环境的设备提供翻墙。（如果你有不在使用的旧电脑，或者路由器支持以及配置软路由可以下载相应系统的翻墙工具打开此选项为你全屋设备提供访问国际互联网的服务，该功能主流翻墙软件都有）</p>
+<p>最后为大家提供一个免费的，我本人在用的VPN软件支持全平台下载安装，提供免费付费节点（免费就够了），白天空闲时可以看油管1080p,晚高峰可以看但画质一般，直播估计不行，但可以作为备用梯子以备不时之需。同时他们的节点是原生节点可以解决注册spotify报错提示不可以使用代理的问题。<br>迷雾通网址（镜像网站）：<a target="_blank" rel="noopener" href="https://rentry.co/getmwt">https://rentry.co/getmwt</a><br>备用（镜像更新）：<a target="_blank" rel="noopener" href="https://github.com/geph-official/geph4/wiki/%E8%BF%B7%E9%9B%BE%E9%80%9A%EF%BC%88%E5%85%8D%E7%BF%BB%E5%A2%99%E9%95%9C%E5%83%8F%EF%BC%89">https://github.com/geph-official/geph4/wiki/%E8%BF%B7%E9%9B%BE%E9%80%9A%EF%BC%88%E5%85%8D%E7%BF%BB%E5%A2%99%E9%95%9C%E5%83%8F%EF%BC%89</a></p>
+<p>那么你成功了吗？<br><img src="8.png" alt="alt"></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" rel="tag"># 科学上网</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/05/18/my-second-post/" rel="prev" title="windows/Android科学上网方法">
+      <i class="fa fa-chevron-left"></i> windows/Android科学上网方法
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#iOS"><span class="nav-number">1.</span> <span class="nav-text">iOS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%A7%8D%E6%96%B9%E6%B3%95"><span class="nav-number">1.1.</span> <span class="nav-text">第一种方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%A7%8D%E6%96%B9%E6%B3%95"><span class="nav-number">1.2.</span> <span class="nav-text">第二种方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mac%E7%AB%AF"><span class="nav-number">2.</span> <span class="nav-text">Mac端</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#V2ray-U"><span class="nav-number">2.1.</span> <span class="nav-text">V2ray U</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Clash-x"><span class="nav-number">2.2.</span> <span class="nav-text">Clash x</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Wu nanzhen"
+      src="/uploads/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Wu nanzhen</p>
+  <div class="site-description" itemprop="description">永远相信美好的事情即将发生</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Wu nanzhen</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
