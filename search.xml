@@ -20,6 +20,18 @@
 ]]></content>
   </entry>
   <entry>
+    <title>我的第一篇博客</title>
+    <url>/2021/05/18/post/</url>
+    <content><![CDATA[<p>这是我用hexo写的第一篇博客，用于测试。</p>
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>第一</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ios/Mac科学上网</title>
     <url>/2021/06/06/post-my-3-blog/</url>
     <content><![CDATA[<p>由于本人并没有iOS设备，但是帮助同学为其iOS设备安装过iOS的科学上网工具，所以关于iOS的教程无法实际演示，仅能以文字说明，我会尽可能表述清楚，也会贴上一些别人写的可访问的教程。Mac我将使用虚拟机进行演示，使用的版本较旧，但操作方法相似。如果您购买了M1版本的mac恕我无能为力，但M1版本的mac可安装iOS端的的app您可以想办法安装。翻墙的一些原理还有免费的节点白嫖我在Windows/android科学上网教程中有说明就不再赘述了。</p>
@@ -46,18 +58,6 @@
       </categories>
       <tags>
         <tag>科学上网</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的第一篇博客</title>
-    <url>/2021/05/18/post/</url>
-    <content><![CDATA[<p>这是我用hexo写的第一篇博客，用于测试。</p>
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>第一</tag>
       </tags>
   </entry>
   <entry>
